@@ -13,6 +13,7 @@ struct ContentView: View {
     
     @ObservedObject private var ibeaconClass = BeaconDelegate()
     @State private var isOn = false
+    @StateObject private var locationManager = LocationManager()
     
     var body: some View {
         GeometryReader{ reader in
@@ -21,6 +22,7 @@ struct ContentView: View {
                     VStack {
                         Button{
                             ibeaconClass.initLocalBeacon()
+                            locationManager.startGeofencing()
                             isOn.toggle()
                         } label: {
                             Image("Panic")
@@ -35,6 +37,8 @@ struct ContentView: View {
                     VStack {
                         Button{
                             ibeaconClass.stopLocalBeacon()
+                            locationManager.deleteData()
+                            locationManager.deleteDataFromCoreData()
                             isOn.toggle()
                         } label: {
                             Image("Off")

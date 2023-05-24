@@ -16,7 +16,6 @@
 		4B7A038B2A1E3E680067ED19 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A038A2A1E3E680067ED19 /* LocationManager.swift */; };
 		4B7A038D2A1E3E760067ED19 /* AppDelegateHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A038C2A1E3E760067ED19 /* AppDelegateHandler.swift */; };
 		4B7A038F2A1E3E850067ED19 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A038E2A1E3E850067ED19 /* MainView.swift */; };
-		4B7A03922A1E4C5D0067ED19 /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A03912A1E4C5D0067ED19 /* GoogleService-Info-2.plist */; };
 		4B7A03952A1E4D760067ED19 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 4B7A03942A1E4D760067ED19 /* FirebaseAnalytics */; };
 		4B7A03972A1E4D760067ED19 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4B7A03962A1E4D760067ED19 /* FirebaseAnalyticsSwift */; };
 		4B7A03992A1E4D760067ED19 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 4B7A03982A1E4D760067ED19 /* FirebaseAuth */; };
@@ -30,6 +29,12 @@
 		4B7A03A92A1E4D770067ED19 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 4B7A03A82A1E4D770067ED19 /* FirebaseStorage */; };
 		4B7A03AB2A1E4F220067ED19 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A03AA2A1E4F220067ED19 /* AuthViewModel.swift */; };
 		4B7A03AD2A1E4F4C0067ED19 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A03AC2A1E4F4C0067ED19 /* SignUpView.swift */; };
+		4B7A03AF2A1E51350067ED19 /* CekSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A03AE2A1E51350067ED19 /* CekSignUp.swift */; };
+		4B7A03B12A1E52FE0067ED19 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B7A03B02A1E52FD0067ED19 /* GoogleService-Info.plist */; };
+		4B7A03B42A1E545D0067ED19 /* GeofenceModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A03B22A1E545D0067ED19 /* GeofenceModel.xcdatamodeld */; };
+		4B7A03B62A1E54CE0067ED19 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A03B52A1E54CE0067ED19 /* CoreDataManager.swift */; };
+		4B7A03B82A1E54F10067ED19 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A03B72A1E54F10067ED19 /* CoreDataStack.swift */; };
+		4B7A03BA2A1E5EE10067ED19 /* GeofenceDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A03B92A1E5EE10067ED19 /* GeofenceDetector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,9 +49,14 @@
 		4B7A038C2A1E3E760067ED19 /* AppDelegateHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateHandler.swift; sourceTree = "<group>"; };
 		4B7A038E2A1E3E850067ED19 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		4B7A03902A1E3F390067ED19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		4B7A03912A1E4C5D0067ED19 /* GoogleService-Info-2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-2.plist"; sourceTree = "<group>"; };
 		4B7A03AA2A1E4F220067ED19 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		4B7A03AC2A1E4F4C0067ED19 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		4B7A03AE2A1E51350067ED19 /* CekSignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CekSignUp.swift; sourceTree = "<group>"; };
+		4B7A03B02A1E52FD0067ED19 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4B7A03B32A1E545D0067ED19 /* GeofenceModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GeofenceModel.xcdatamodel; sourceTree = "<group>"; };
+		4B7A03B52A1E54CE0067ED19 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		4B7A03B72A1E54F10067ED19 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		4B7A03B92A1E5EE10067ED19 /* GeofenceDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeofenceDetector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,16 +102,21 @@
 			children = (
 				4B7A03902A1E3F390067ED19 /* Info.plist */,
 				4B7A03782A1E3E070067ED19 /* SafZonApp.swift */,
+				4B7A03B72A1E54F10067ED19 /* CoreDataStack.swift */,
+				4B7A03B52A1E54CE0067ED19 /* CoreDataManager.swift */,
 				4B7A03AA2A1E4F220067ED19 /* AuthViewModel.swift */,
 				4B7A03AC2A1E4F4C0067ED19 /* SignUpView.swift */,
 				4B7A03862A1E3E4B0067ED19 /* ibeacon.swift */,
 				4B7A03882A1E3E570067ED19 /* ibeaconDetector.swift */,
 				4B7A038A2A1E3E680067ED19 /* LocationManager.swift */,
+				4B7A03B92A1E5EE10067ED19 /* GeofenceDetector.swift */,
 				4B7A038C2A1E3E760067ED19 /* AppDelegateHandler.swift */,
 				4B7A038E2A1E3E850067ED19 /* MainView.swift */,
+				4B7A03AE2A1E51350067ED19 /* CekSignUp.swift */,
 				4B7A037A2A1E3E070067ED19 /* ContentView.swift */,
+				4B7A03B22A1E545D0067ED19 /* GeofenceModel.xcdatamodeld */,
+				4B7A03B02A1E52FD0067ED19 /* GoogleService-Info.plist */,
 				4B7A037C2A1E3E080067ED19 /* Assets.xcassets */,
-				4B7A03912A1E4C5D0067ED19 /* GoogleService-Info-2.plist */,
 				4B7A037E2A1E3E080067ED19 /* Preview Content */,
 			);
 			path = SafZon;
@@ -191,7 +206,7 @@
 			files = (
 				4B7A03802A1E3E080067ED19 /* Preview Assets.xcassets in Resources */,
 				4B7A037D2A1E3E080067ED19 /* Assets.xcassets in Resources */,
-				4B7A03922A1E4C5D0067ED19 /* GoogleService-Info-2.plist in Resources */,
+				4B7A03B12A1E52FE0067ED19 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,14 +218,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B7A037B2A1E3E070067ED19 /* ContentView.swift in Sources */,
+				4B7A03AF2A1E51350067ED19 /* CekSignUp.swift in Sources */,
 				4B7A038F2A1E3E850067ED19 /* MainView.swift in Sources */,
 				4B7A03872A1E3E4B0067ED19 /* ibeacon.swift in Sources */,
 				4B7A038B2A1E3E680067ED19 /* LocationManager.swift in Sources */,
 				4B7A03AB2A1E4F220067ED19 /* AuthViewModel.swift in Sources */,
+				4B7A03B82A1E54F10067ED19 /* CoreDataStack.swift in Sources */,
+				4B7A03B62A1E54CE0067ED19 /* CoreDataManager.swift in Sources */,
 				4B7A03792A1E3E070067ED19 /* SafZonApp.swift in Sources */,
 				4B7A03892A1E3E570067ED19 /* ibeaconDetector.swift in Sources */,
 				4B7A03AD2A1E4F4C0067ED19 /* SignUpView.swift in Sources */,
+				4B7A03B42A1E545D0067ED19 /* GeofenceModel.xcdatamodeld in Sources */,
 				4B7A038D2A1E3E760067ED19 /* AppDelegateHandler.swift in Sources */,
+				4B7A03BA2A1E5EE10067ED19 /* GeofenceDetector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,6 +522,19 @@
 			productName = FirebaseStorage;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		4B7A03B22A1E545D0067ED19 /* GeofenceModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4B7A03B32A1E545D0067ED19 /* GeofenceModel.xcdatamodel */,
+			);
+			currentVersion = 4B7A03B32A1E545D0067ED19 /* GeofenceModel.xcdatamodel */;
+			path = GeofenceModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4B7A036D2A1E3E070067ED19 /* Project object */;
 }

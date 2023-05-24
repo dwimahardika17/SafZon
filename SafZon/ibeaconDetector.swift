@@ -96,12 +96,18 @@ class BeaconDetector: NSObject, CLLocationManagerDelegate, ObservableObject {
     
 }
 
+struct AnnotationItem: Identifiable {
+    let id = UUID()
+    let annotation: MKPointAnnotation
+}
+
 struct ibeaconDetector: View {
     
     @ObservedObject var detector = BeaconDetector()
     @StateObject private var locationManager = LocationManager()
     @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: -6.302445, longitude: 106.6521382), span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2))
     @State private var distance: Double = 0.0
+    @State private var annotationItems = [AnnotationItem]()
     
     var body: some View {
         GeometryReader{ reader in
@@ -155,12 +161,15 @@ struct ibeaconDetector: View {
 //                Text("\(detector.lastDistance, specifier: ".2")")
                 //                .opacity(0.6)
             }
-            Map(coordinateRegion: $region, showsUserLocation: true)
-                .onAppear {
-                    if let userLocation = locationManager.userLocation {
-                        region = MKCoordinateRegion(center: userLocation, span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2))
-                    }
+            Map(coordinateRegion: $locationManager.region,
+                interactionModes: .all,
+                showsUserLocation: true,
+                annotationItems: annotationItems)
+            { item in
+                MapAnnotation(coordinate: item.annotation.coordinate) {
+                    Image(systemName: "mappin")
                 }
+            }
                 .frame(width: reader.frame(in: .global).maxX, height: reader.frame(in: .global).maxY)
 //                .ignoresSafeArea()
                 .opacity(0.5)
@@ -169,6 +178,10 @@ struct ibeaconDetector: View {
             detector.startScanning()
         }
         }
+        .onReceive(locationManager.objectWillChange, perform: { _ in
+            // Update the annotationItems when the location manager's objectWillChange publisher emits a value
+            annotationItems = locationManager.annotations.map { AnnotationItem(annotation: $0) }
+        })
         
     }
 }

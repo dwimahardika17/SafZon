@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct MainView: View {
+    
     var body: some View {
+        
+        
         GeometryReader { reader in
             
         
@@ -30,6 +33,13 @@ struct MainView: View {
                     .background(Color.white)
                     .position(x: reader.frame(in: .global).maxX*0.5, y: reader.frame(in: .global).maxX*0.97)
                     .frame(width: reader.frame(in: .global).maxX, height: reader.frame(in: .global).maxY)
+//                GeofenceDetector()
+//                    .tabItem {
+//                        Label("Radar", systemImage: "map.circle.fill")
+//                    }
+//                    .background(Color.white)
+//                    .position(x: reader.frame(in: .global).maxX*0.5, y: reader.frame(in: .global).maxX*0.97)
+//                    .frame(width: reader.frame(in: .global).maxX, height: reader.frame(in: .global).maxY)
             }
 //            .frame(height: 100)
 //            .opacity(0)

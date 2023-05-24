@@ -24,6 +24,7 @@ struct SafZonApp: App {
     var body: some Scene {
         WindowGroup {
             MainView()
+                .environmentObject(AuthViewModel())
 //            ibeaconDetector()
                             
         }

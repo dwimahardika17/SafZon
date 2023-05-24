@@ -28,6 +28,8 @@
 		4B7A03A52A1E4D760067ED19 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 4B7A03A42A1E4D760067ED19 /* FirebaseFunctions */; };
 		4B7A03A72A1E4D760067ED19 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4B7A03A62A1E4D760067ED19 /* FirebaseRemoteConfigSwift */; };
 		4B7A03A92A1E4D770067ED19 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 4B7A03A82A1E4D770067ED19 /* FirebaseStorage */; };
+		4B7A03AB2A1E4F220067ED19 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A03AA2A1E4F220067ED19 /* AuthViewModel.swift */; };
+		4B7A03AD2A1E4F4C0067ED19 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A03AC2A1E4F4C0067ED19 /* SignUpView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		4B7A038E2A1E3E850067ED19 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		4B7A03902A1E3F390067ED19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4B7A03912A1E4C5D0067ED19 /* GoogleService-Info-2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-2.plist"; sourceTree = "<group>"; };
+		4B7A03AA2A1E4F220067ED19 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		4B7A03AC2A1E4F4C0067ED19 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,8 @@
 			children = (
 				4B7A03902A1E3F390067ED19 /* Info.plist */,
 				4B7A03782A1E3E070067ED19 /* SafZonApp.swift */,
+				4B7A03AA2A1E4F220067ED19 /* AuthViewModel.swift */,
+				4B7A03AC2A1E4F4C0067ED19 /* SignUpView.swift */,
 				4B7A03862A1E3E4B0067ED19 /* ibeacon.swift */,
 				4B7A03882A1E3E570067ED19 /* ibeaconDetector.swift */,
 				4B7A038A2A1E3E680067ED19 /* LocationManager.swift */,
@@ -200,8 +206,10 @@
 				4B7A038F2A1E3E850067ED19 /* MainView.swift in Sources */,
 				4B7A03872A1E3E4B0067ED19 /* ibeacon.swift in Sources */,
 				4B7A038B2A1E3E680067ED19 /* LocationManager.swift in Sources */,
+				4B7A03AB2A1E4F220067ED19 /* AuthViewModel.swift in Sources */,
 				4B7A03792A1E3E070067ED19 /* SafZonApp.swift in Sources */,
 				4B7A03892A1E3E570067ED19 /* ibeaconDetector.swift in Sources */,
+				4B7A03AD2A1E4F4C0067ED19 /* SignUpView.swift in Sources */,
 				4B7A038D2A1E3E760067ED19 /* AppDelegateHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
